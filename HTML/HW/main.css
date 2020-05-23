@@ -1,0 +1,123 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: #818181;
+    font-family: 'Chelsea Market';
+}
+
+@font-face {
+    font-family: 'Chelsea Market';
+    src: url('/fonts/ChelseaMarket-Regular.ttf');
+}
+
+.sidenav {
+    height: 100%;
+    width: 160px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+  
+.sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+}
+  
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+.active {
+    color: #f1f1f1 !important;
+}
+
+.content {
+    margin-left: 160px;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.round-img {
+    border-radius: 50%;
+    border: 15px solid tomato;
+    display: inline-block;
+}
+
+.motto {
+    font-size: 40px;
+    margin: 20px;
+}
+
+.button {
+    font-size: 30px;
+    width: 150px;
+    height: 60px;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.button:hover {
+    background-color: #d6d6d6;
+}
+
+.button a {
+    text-decoration: none;
+    color: black;
+    font-family: 'Chelsea Market';
+}
+
+.container {
+    margin-top: 10px;
+    margin-left: 210px;
+    margin-right: 50px;
+    padding: 50px;
+    display: flex;
+    align-items: center;
+    border: 10px solid rgb(231, 231, 231);
+    border-radius: 30px;
+    background-color: rgb(231, 231, 231);
+}
+
+.space {
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+
+.header-info {
+    margin-left: 5em;
+}
+
+.jwc {
+    display: block;
+    margin: auto;
+    border-radius: 10px;
+    border: 10px solid #d6d6d6;
+}
+
+.card {
+    border: 10px dashed rgb(210, 194, 255);
+    margin: 20px;
+    width: 500px;
+}
+
+.card span:first-of-type {
+    font-size: 25px;
+    text-align: center;
+}
+
+.card span {
+    display: block;
+}
