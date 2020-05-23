@@ -10,7 +10,7 @@ body {
 
 @font-face {
     font-family: 'Chelsea Market';
-    src: url('/fonts/ChelseaMarket-Regular.ttf');
+    src: url('./fonts/ChelseaMarket-Regular.ttf');
 }
 
 .sidenav {
