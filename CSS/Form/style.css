@@ -1,0 +1,20 @@
+label {
+    display: inline-block;
+    width: 100px;
+    margin-bottom: 10px;
+}
+
+h3 {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: rgb(212, 212, 212);
+}
+
+input, select {
+    width: 200px;
+}
+
+.required::after {
+    content: "*";
+    color: red;
+}

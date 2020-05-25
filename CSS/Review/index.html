@@ -1,12 +1,371 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Review</title>
 </head>
+
 <body>
     <h1>CSS systax ประกอบด้วยอะไรบ้าง</h1>
-    <ol></ol>
+    <dl>
+        <dt>
+            Selector
+        <dd>
+            - เป็นส่วนสำหรับการเลือกระส่วนการนำ css ไปใช้งานในส่วนไหน
+        </dd>
+        </dt>
+        <dt>
+            Declaration
+        <dd>
+            - เป็นส่วนของการประกาศค่าว่าต้องการให้มีลักษณะอย่างไรบ้าง ซึ่งจะแบ่งเป็น Property คือการกำหนดลักษณะ และ
+            value คือค่าที่ต้องการ
+        </dd>
+        </dt>
+    </dl>
+    <h2>Example Syntax</h2>
+    <h3>Selector {Property : value }</h3>
+    <h3>h1 {color : red}</h3>
+    <hr>
+    <h1>การเขียน CSS มีกี่แบบอะไรบ้าง</h1>
+    <table border="1px">
+        <thead>
+            <tr>
+                <th>ประเภทของการเขียน</th>
+                <th>ลักษณะ</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    การเขียนแบบ inline style
+                </td>
+                <td>
+                    เป็นการเขียนแทรก css ใน element นั้นผ่านทาง Attribute style
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    การเขียนแบบ internal file
+                </td>
+                <td>
+                    เป็นการเขียน css ไว้ใน Tag &lt;style> &lt;/style> ซึ่งจะเรียกใช้งานผ่าน Attribute class
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    การเขียนแบบ external file
+                </td>
+                <td>
+                    เป็นการเขียน css แยกไว้ในอีกไฟล์นึงแล้วทำการ import เข้ามาใช้งานในไฟล์ html ซึ่งจะสามารถเรียกใช้งาน
+                    css ได้ผ่าน Attribute class เช่นกัน
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <hr>
+    <h1>selector มีกี่แบบอะไรบ้าง</h1>
+    <table border="1px">
+        <thead>
+            <tr>
+                <th>ประเภท</th>
+                <th>คำอธิบาย</th>
+                <th>ตัวอย่าง</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    The CSS element Selector
+                </td>
+                <td>
+                    ใช้ Tag HTML เป็น selector ดังนั้น เมื่อใช้ Tah HTML นั้น ๆ จะถูก CSS จัดการด้วย
+                </td>
+                <td>
+                    p {color: red;}
+                </td>
+            </tr>
+            <tr>
+                <td>The CSS id Selector</td>
+                <td>ใช้ Attribute id ในการกำหนด css </td>
+                <td>#paragraph {color : red;}</td>
+            </tr>
+            <tr>
+                <td>The CSS class Selector</td>
+                <td>ใช้ Attribute class ในการกำหนด css </td>
+                <td>.paragraph {color : red;}</td>
+            </tr>
+            <tr>
+                <td>The CSS Universal Selector</td>
+                <td>กำหนด css ให้ทุก HTML elements </td>
+                <td>* {color : red;}</td>
+            </tr>
+            <tr>
+                <td>The CSS Grouping Selector</td>
+                <td>กำหนด css ให้ HTML elements ที่ระบุมี css ตามที่กำหนด</td>
+                <td>p, h1, h2 {color : red;}</td>
+            </tr>
+        </tbody>
+    </table>
+    <hr>
+    <h1>Combinator ทีกี่แบบอะไรบ้าง</h1>
+    <table border="1px">
+        <thead>
+            <tr>
+                <th>ประเภท</th>
+                <th>สัญลักษณ์</th>
+                <th>อธิบาย</th>
+                <th>ตัวอย่าง</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Descendant Selector</td>
+                <td>เว้นวรรค</td>
+                <td>เป็นการเลือก element ทั้งหมดที่ตรงกับ selector</td>
+                <td>h1 p {color : red}</td>
+            </tr>
+            <tr>
+                <td>Child Selector</td>
+                <td>></td>
+                <td>เป็นการเลือก element ทั้งหมดที่เป็นลูกของ element เริ่มต้น เช่น Tag p ทั้งหมดที่อยู่ใน div</td>
+                <td>div > p {color : red}</td>
+            </tr>
+            <tr>
+                <td>Adjacent Sibling Selector</td>
+                <td>+</td>
+                <td>เป็นการเลือก element ที่อยู่หลังจาก element นั้น ๆ เช่น เลือก Tag p ที่อยู่หลัง div
+                    นั้นทันทีเพียงตัวเดียว</td>
+                <td>div + p {color : red}</td>
+            </tr>
+            <tr>
+                <td>General Sibling Selector</td>
+                <td>~</td>
+                <td>เป็นการเลือก element ที่อยู่หลังจาก element นั้น ๆ ทั้งหมด เช่น เลือก Tag p ที่อยู่หลัง div ทั้งหมด
+                </td>
+                <td>div ~ p {color : red}</td>
+            </tr>
+        </tbody>
+    </table>
+    <hr>
+    <h1>property และ value คือ อะไร แตกต่างกันอย่างไร</h1>
+    <table border="1px">
+        <thead>
+            <tr>
+                <th>ชนิด</th>
+                <th>ความหมาย</th>
+                <th>ตัวอย่าง</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>property</td>
+                <td>เป็นคุณลักษณะที่ต้องการให้เป็น</td>
+                <td>property คือ color</td>
+            </tr>
+            <tr>
+                <td>value</td>
+                <td>เป็นหน่วยของคุณลักษณะนั้น</td>
+                <td>value จะเป็นค่าของสี เช่น red</td>
+            </tr>
+        </tbody>
+    </table>
+    <hr>
+    <h1>property ที่สอนใน precamp มีกี่กลุ่มอะไรบ้าง</h1>
+    <table border="1px">
+        <thead>
+            <tr>
+                <th>กลุ่ม</th>
+                <th>ใช้ทำ</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>content</td>
+                <td>ใช้จัดการกับข้อความต่าง ๆ เช่น สีของข้อความ การจัดกึ่งกลาง</td>
+            </tr>
+            <tr>
+                <td>border</td>
+                <td>ใช้จัดการเกี่ยวกับกรอบของ element</td>
+            </tr>
+            <tr>
+                <td>image</td>
+                <td>ใช้จัดการเกี่ยวกับรูปภาพ เช่น ขนาดความกว้าง</td>
+            </tr>
+            <tr>
+                <td>margin</td>
+                <td>ใช้จัดการเกี่ยวกับ การเว้นระยะห่างนอก border</td>
+            </tr>
+            <tr>
+                <td>display</td>
+                <td>ใช้จัดการรูปแบบแสดงผลของ elements</td>
+            </tr>
+            <tr>
+                <td>grid</td>
+                <td>เป็นหนึ่งใน display ที่ใช้แสดงลักษณะของตาราง</td>
+            </tr>
+            <tr>
+                <td>flex</td>
+                <td>เป็นหนึ่งใน display ที่ใช้จัดการรูปแบบแสดงผลว่ามีช่องว่างระหว่าง element, จัดให้อยู่ตรงกลาง</td>
+            </tr>
+            <tr>
+                <td>media queries</td>
+                <td>ใช้กำหนดขนาดการแสดงผลตามขนาดของหน้าขอ Responsive</td>
+            </tr>
+        </tbody>
+    </table>
+    <hr>
+    <h1>value unit มีกี่ประเภทอะไรบ้าง แต่ละประเภทคืออะไร</h1>
+    <table border="1px">
+        <thead>
+            <tr>
+                <th>ประเภท</th>
+                <th>คือ</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Absolute Lengths</td>
+                <td>เป็นการกำหนดค่าแบบตายตัว เช่น px </td>
+            </tr>
+            <tr>
+                <td>Relative Lengths</td>
+                <td>เป็นการกำหนดค่าแบบไม่ตายตัวตามขนาดหน้าจอ เช่น em %</td>
+            </tr>
+        </tbody>
+    </table>
+    <hr>
+    <h1>value ใน display property มีอไะรบ้าง</h1>
+    <table border="1px">
+        <thead>
+            <tr>
+                <th>Value</th>
+                <th>Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>inline</td>
+                <td>แสดงเป็น inline element ค่าของ width กับ height จะไม่ส่งผลใด ๆ</td>
+            </tr>
+            <tr>
+                <td>block</td>
+                <td>แสดงผลเป็น block element (like &lt;p&gt;). จะขึ้นบรรทัดใหม่เสมอ มีความกว้าง ความยาว</td>
+            </tr>
+            <tr>
+                <td>contents</td>
+                <td>Makes the container disappear, making the child elements children of the
+                    element the next level up in the DOM</td>
+            </tr>
+            <tr>
+                <td>flex</td>
+                <td>แสดงผลเป็น block-level flex container</td>
+            </tr>
+            <tr>
+                <td>grid</td>
+                <td>แสดงผลเป็น block-level grid container</td>
+            </tr>
+            <tr>
+                <td>inline-block</td>
+                <td>แสดงผลเป็น inline-level block container. คล้ายเป็น inline element แต่สามารถกำหนดความ กว้าง ยาว ได้</td>
+            </tr>
+            <tr>
+                <td>inline-flex</td>
+                <td>แสดงผลเป็น inline-level flex container</td>
+            </tr>
+            <tr>
+                <td>inline-grid</td>
+                <td>แสดงผลเป็น inline-level grid container</td>
+            </tr>
+            <tr>
+                <td>none</td>
+                <td>The element is completely removed</td>
+            </tr>
+        </tbody>
+    </table>
+    <hr>
+    <h1>Grid และ Flex ต่างกันอย่างไร</h1>
+    <table border="1px">
+        <thead>
+            <tr>
+                <th>ประเภท</th>
+                <th>คำนิยาม</th>
+                <th>มิติ</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Grid</td>
+                <td>Container-Based</td>
+                <td>2 มิติ</td>
+            </tr>
+            <tr>
+                <td>Flexbox</td>
+                <td>Content-Based</td>
+                <td>1 มิติ</td>
+            </tr>
+        </tbody>
+    </table>
+    <hr>
+    <h1>justify and align แตกต่างกันอย่างไร</h1>
+    <table border="1px">
+        <thead>
+            <tr>
+                <th>ประเภท</th>
+                <th>คำอธิบาย</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>justify</td>
+                <td>เป็นการจัด element แนวนอนด้านข้างว่าจะเว้นลักษณะยังไง</td>
+            </tr>
+            <tr>
+                <td>align</td>
+                <td>เป็นการจัด element ในแนวตั้ง</td>
+            </tr>
+        </tbody>
+    </table>
+    <hr>
+    <h1>position คืออะไร และ อะไรบ้าง</h1>
+        <table border="1px">
+            <thead>
+                <tr>
+                    <th>property value</th>
+                    <th>คำอธิบาย</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>static</td>
+                    <td>ค่าเริ่มต้น</td>
+                </tr>
+                <tr>
+                    <td>absolute</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>fixed</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>relative</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>sticky</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>inital</td>
+                    <td>set property กลับสู่ค่าเริ่มต้น</td>
+                </tr>
+            </tbody>
+        </table>
+    <hr>
+    <h1>z-index คือ อะไรใช้อย่างไร</h1>
+    <p>เป็นการจัดลำดับ Layer การแสดงผล โดยปกติจะเริ่มที่ 0 ยิ่งค่ามากจะอยู่ด้านหน้า</p>
 </body>
+
 </html>
