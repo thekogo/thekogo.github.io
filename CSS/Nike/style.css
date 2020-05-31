@@ -1,0 +1,238 @@
+@font-face {
+    font-family: 'Kanit';
+    src: url('./fonts/Kanit-Regular.ttf');
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Kanit';
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+    background-color: #ffffff;
+    border-bottom: 1px solid #d3d3d3;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #919191;
+    display: inline-block;
+    padding: 7px 20px;
+    cursor: pointer;
+    margin: 0px;
+    float: left;
+    border-left: 1px solid #d3d3d3;
+    font-size: 15px;
+}
+
+.navbar a:last-child {
+    border-right: 1px solid #d3d3d3;
+}
+
+.navbar a:hover {
+    color: #515151
+}
+
+.navbar-second {
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+    background-color: #ffffff;
+    border-bottom: 1px solid #d3d3d3;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.navbar-second div {
+    margin: auto;
+}
+
+.navbar-second div a {
+    text-decoration: none;
+    color: #919191;
+    display: inline-block;
+    padding: 23px 15px;
+    border-bottom: 3px solid transparent;
+}
+
+.navbar-second div a:hover {
+    color: #515151;
+    border-bottom: 3px solid #515151;
+}
+
+.search {
+    margin-top: auto;
+    margin-bottom: auto;
+    height: 30px;
+    width: 200px;
+}
+
+.logo {
+    margin: 10px;
+    width: 200px;
+    font-size: 3rem;
+}
+
+/* end navbar */
+
+.covid {
+    text-align: center;
+    display: block;
+    padding: 17px;
+    background-color: #f3f3f3;
+    font-size: 15px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0px;
+}
+
+.header h1:last-child{
+    visibility: hidden;
+}
+
+.header ul {
+    list-style-type: none;
+    margin: auto 0px;
+}
+
+.header ul li {
+    display: inline;
+    padding: 0px 15px;
+}
+
+.container-banner {
+    position: relative;
+}
+
+.container {
+    margin: 0px 5%;
+}
+
+.banner {
+    width: 100%;
+}
+
+.caption-banner-top-left {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    color: white;
+    font-size: 20px;
+}
+
+.caption-banner-bottom-left {
+    position: absolute;
+    bottom: 40px;
+    left: 30px;
+    color: white;
+    font-size: 20px;
+}
+
+.caption-banner h1 {
+    font-size: 60px;
+}
+
+.btn-rounded {
+    color: black;
+    background-color: white;
+    padding: 7px 20px;
+    border-radius: 20px;
+    border: 0px;
+    cursor: pointer;
+}
+
+.hot {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 1em;
+}
+
+.require {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 1em;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+}
+
+.menu div {
+    margin: 0px 2em;
+}
+
+.menu-list {
+    list-style-type: none;
+    margin-top: 15px;
+}
+
+
+.menu-list li {
+    color: #919191;
+    cursor: pointer;
+    margin-bottom: 5px;
+}
+
+.menu-list li:hover {
+    color: #515151
+}
+
+footer {
+    background-color: #111111;
+    color: white;
+}
+
+.flexbox {
+    justify-content: space-between;
+    display: flex;
+}
+
+.hr {
+    margin: 0px 5%;
+    border: 1px solid #616161;
+}
+
+.mini {
+    font-size: 10px;
+    color: #616161;
+}
+
+.mini a {
+    margin: 0px 10px;
+}
+
+.social {
+    color: #111111;
+    background-color: #919191;
+    border: 8px solid #919191;
+    border-radius: 50%;
+    font-size: 20px;
+}
+
+.swip-container {
+    overflow: auto;
+    white-space: nowrap;
+}
+
+.swip-container div {
+    display: inline-block;
+    width: 33%;
+    margin: 0px 10px
+}
+
+.swip-container div img {
+    width: 100%;
+}
