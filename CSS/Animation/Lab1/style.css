@@ -1,0 +1,172 @@
+.box {
+    border: 3px solid black;
+}
+
+.fromtoColor {
+    animation-name: fromtoColor;
+    animation-duration: 5s;
+    color: aquamarine;
+}
+
+.fromtoWidth {
+    animation: fromtoWidth 5s;
+    background-color: aquamarine;
+    width: 300px;
+}
+
+.fromtoBorder {
+    animation: fromtoBorder 5s;
+    border: 3px solid transparent;
+}
+
+.fromtoPosition {
+    position: relative;
+    animation: fromtoPosition 5s;
+    border: 3px solid red;
+    width: 100px;
+    left: 100px;
+}
+
+.fromtoShow {
+    animation: fromtoShow 5s;
+    visibility: hidden;
+    border: 3px solid red;
+}
+
+@keyframes fromtoColor {
+    from {
+        color: black;
+    }
+    to {
+        color: aquamarine;
+    }
+}
+
+@keyframes fromtoWidth {
+    from {
+        width: 100px;
+    }
+    to {
+        width: 300px;
+    }
+}
+
+@keyframes fromtoBorder {
+    from {
+        border: 3px solid red;
+    }
+    to {
+        border: 3px solid transparent;
+    }
+}
+
+@keyframes fromtoPosition {
+    from {
+        left: 0px;
+    }
+    to {
+        left: 100px
+    }
+}
+
+@keyframes fromtoShow {
+    from {
+        visibility: hidden;
+    }
+    to {
+        visibility: visible;
+    }
+}
+
+/* end from to animation */
+
+.perColor {
+    animation-name: perColor;
+    animation-duration: 5s;
+    color: aquamarine;
+}
+
+.perWidth {
+    animation: perWidth 5s;
+    background-color: aquamarine;
+    width: 300px;
+}
+
+.perBorder {
+    animation: perBorder 5s;
+    border: 3px solid transparent;
+}
+
+.perPosition {
+    position: relative;
+    animation: perPosition 5s;
+    border: 3px solid red;
+    width: 100px;
+    left: 100px;
+}
+
+.perShow {
+    animation: perShow 5s;
+    visibility: visible;
+    border: 3px solid red;
+}
+
+@keyframes perColor {
+    0% {
+        color: black;
+    }
+    25% {
+        color: red;
+    }
+    100% {
+        color: aquamarine;
+    }
+}
+
+@keyframes perWidth {
+    0% {
+        width: 100px;
+    }
+    25% {
+        width: 50px;
+    }
+    100% {
+        width: 300px;
+    }
+}
+
+@keyframes perBorder {
+    0% {
+        border: 3px solid red;
+    }
+    50% {
+        border: 3px dashed red
+    }
+    100% {
+        border: 3px dashed transparent;
+    }
+}
+
+@keyframes perPosition {
+    0% {
+        left: 0px;
+    }
+    25% {
+        left: 150px;
+    }
+    100% {
+        left: 100px
+    }
+}
+
+@keyframes perShow {
+    0% {
+        visibility: hidden;
+    }
+    95% {
+        visibility: hidden;
+    }
+    100% {
+        visibility: visible;
+    }
+}
