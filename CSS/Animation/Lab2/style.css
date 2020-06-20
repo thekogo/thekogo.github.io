@@ -1,0 +1,50 @@
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+}
+
+.normal {
+    animation-name: box;
+    animation-duration: 10s;
+    animation-delay: 2s;
+    animation-direction: normal;
+    animation-iteration-count: 5;
+}
+
+.reverse {
+    animation-name: box;
+    animation-duration: 10s;
+    animation-delay: 4s;
+    animation-direction: reverse;
+    animation-iteration-count: 5;
+}
+
+.alternate {
+    animation-name: box;
+    animation-duration: 10s;
+    animation-delay: 6s;
+    animation-direction: alternate;
+    animation-iteration-count: 5;
+}
+
+@keyframes box {
+    0% {
+        background-color: red;
+    }
+    20% {
+        background-color: black
+    }
+    40% {
+        background-color: aqua;
+    }
+    60% {
+        background-color: bisque;
+    }
+    80% {
+        background-color: brown;
+    }
+    100% {
+        background-color: blue;
+    }
+}

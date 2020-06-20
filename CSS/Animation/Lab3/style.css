@@ -1,0 +1,86 @@
+.box1 {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    animation: box1 alternate ease 5s 3s infinite;
+}
+
+.box2 {
+    width: 100px;
+    height: 100px;
+    background-color: black;
+    animation: box2 reverse ease-in-out 5s 2s 10;
+}
+
+.box3 {
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    position: relative;
+    animation: box3 normal cubic-bezier(0.6, -0.28, 0.735, 0.045) 5s 1s 3;
+}
+
+@keyframes box1 {
+    0% {
+        background-color: red;
+    }
+    20% {
+        background-color: aqua;
+    }
+    40% {
+        background-color: blue;
+    }
+    60% {
+        background-color: yellowgreen;
+    }
+    80% {
+        background-color: brown;
+    }
+    100% {
+        background-color: wheat;
+    }
+}
+
+@keyframes box2 {
+    0% {
+        visibility: hidden;
+    }
+    20% {
+        visibility: hidden;
+    }
+    40% {
+        visibility: hidden;
+    }
+    60% {
+        visibility: visible;
+    }
+    80% {
+        visibility: visible;
+    }
+    100% {
+        visibility: visible;
+    }
+}
+
+@keyframes box3 {
+    0% {
+        left: 0px;
+    }
+    20% {
+        left: 300px;
+    }
+    40% {
+        left: 200px;
+        bottom: 100px;
+    }
+    60% {
+        left: 50px;
+        bottom: 0px;
+    }
+    80% {
+        top: 50px;
+    }
+    100% {
+        left: 300px;
+    }
+}
