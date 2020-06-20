@@ -1,0 +1,14 @@
+img {
+    display: block;
+}
+
+.box {
+    border: 1px solid black;
+    margin: 10px;
+}
+
+.box h1 {
+    border: 1px solid black;
+    margin: 10px;
+    text-align: center;
+}
