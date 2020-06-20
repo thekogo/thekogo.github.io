@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1 Register Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Create an Account</h1>
+    <form action="" method="post">
+        <p>
+            <label for="email">Email : </label>
+            <br>
+            <input type="text" id="email" tabindex="1">
+        </p>
+        <p>
+            <label for="password">Password : </label>
+            <br>
+            <input type="password" id="password" tabindex="2">
+        </p>
+        <p>
+            <label for="age">Age : </label>
+            <br>
+            <select name="age" id="age" tabindex="3">
+                <option value="">Select Age</option>
+                <option value="group1">Under 18</option>
+                <option value="group2">18 to 30</option>
+                <option value="group3">31 to 45</option>
+                <option value="group4">46+</option>
+            </select>
+        </p>
+        <p>
+            <label for="about">Tell us a little about yourself:</label>
+            <br>
+            <textarea name="about" id="about" rows="5" cols="50" tabindex="4"></textarea>
+        </p>
+        <p>
+            <input type="checkbox" value="yes" tabindex="5"> I agree to the
+            <a href="#" target="_blank">terms of service</a>
+        </p>
+        <p>
+            <button type="submit" tabindex="6">Submit</button>
+        </p>
+
+    </form>
+</body>
+</html>

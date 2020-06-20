@@ -1,0 +1,4 @@
+input:hover ,textarea:hover, select:hover{
+    background-color:#ffff66;
+    border-color:#999999;
+}
