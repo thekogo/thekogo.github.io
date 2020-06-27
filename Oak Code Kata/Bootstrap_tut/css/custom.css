@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script|Pangolin');
+html {
+    font-size: 16px;
+}
+
+body{
+    background: #DCEBFC;
+    font-family: 'Pangolin', cursive;
+}
+
+.container{
+    background: #FFF;
+    padding: 10rem;
+}
+
+h1, h2, h3 {
+    color: #4F85D7;
+}
+
+.footer {
+    font-family: 'Dancing Script', cursive;
+}
+
+.front-icon {
+    display: block;
+    color:#FFFFFF;
+    padding:3rem;
+    background:#4F85D7;
+}
+
+.front-icon i {
+    font-size: 10rem;
+}
+
+.bg-primary {
+    background-color: orange !important; 
+}
