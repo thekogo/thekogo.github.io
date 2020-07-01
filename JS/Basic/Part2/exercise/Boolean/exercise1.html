@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 1</title>
+</head>
+<body>
+    
+</body>
+<script>
+    alert( null || 2 || undefined ); // alert(2)
+    alert( alert(1) || 2 || alert(3) ); // alert(1) ตามด้วย alert(2) แต่ไม่แสดง alert(3)
+    alert( 1 && null && 2 ); // alert(null)
+    alert( alert(1) && alert(2) ); // alert(1) ตามด้วย alert(undefined)
+    alert( null || 2 && 3 || 4 ); // alert(3)
+</script>
+</html>

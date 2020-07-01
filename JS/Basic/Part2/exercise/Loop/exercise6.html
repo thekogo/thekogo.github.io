@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 6</title>
+</head>
+<body>
+    
+</body>
+<script>
+    let secretNum = +prompt("Player 1 Input secret number : ");
+    let answerNum;
+    while (answerNum !== secretNum) {
+        answerNum = +prompt("Player 2 Input Number : ");
+        if(answerNum > secretNum) {
+            alert("เลขของคุณมากเกินไป")
+        } else if (answerNum < secretNum){
+            alert("เลขของคุณน้อยเกินไป")
+        } else {
+            alert("คุณทายถูก")
+        }
+    }
+</script>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 5</title>
+</head>
+<body>
+    
+</body>
+<script>
+    let isAdmin = prompt("Enter your name ?");
+    if (isAdmin == "Admin") {
+        let password = prompt("Enter your password");
+        if (password == "codecamp#5") {
+            alert("ยินดีต้อนรับ");
+        } else if (password == null || password == "Admin") {
+            alert("ยกเลิก");
+        } 
+        else {
+            alert("Wrong password");
+        }
+    } else if (isAdmin == null || isAdmin == "") {
+        alert("ยกเลิก");
+    } else {
+        alert("ผมไม่รู้จักคุณ");
+    }
+</script>
+</html>
