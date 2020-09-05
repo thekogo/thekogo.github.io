@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+</body>
+<script>
+    let map = new Map();
+
+    map.set("name", "John");
+
+    let keys = map.keys();
+    
+    let arr = [];
+    for(let item of keys) {
+        arr.push(item)
+    }
+    // Error: keys.push is not a function
+    arr.push("more");
+
+    console.log(arr);
+
+</script>
+
+</html>

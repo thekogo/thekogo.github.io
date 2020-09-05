@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Key Value</title>
+</head>
+<body>
+    
+</body>
+<script>
+    let obj = {};
+    let key = prompt(`Enter your key ?`);
+
+    while (key != "stop") {
+        let value = prompt(`Enter your value of ${key}`);
+        obj[key] = value;
+        key = prompt(`Enter your key ?`);
+    }
+    console.log(obj);
+</script>
+</html>

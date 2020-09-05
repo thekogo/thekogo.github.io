@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    function extractCurrencyValue(string, rate) {
+        return Number(string.slice(1)) * rate;
+    }
+
+    alert( extractCurrencyValue('$120', 30.5) === 3660 );
+</script>
+</html>
