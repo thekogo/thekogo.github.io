@@ -1,33 +1,38 @@
-const { uniqueId } = require("lodash");
+const db = require("../models");
 
-let todoList = [];
-
-const getTodoList = (req, res) => {
-    res.status(200).send(todoList);
+const getTodoList = async (req, res) => {
+    const todolist = await db.TodoList.findAll()
+    res.status(200).send(todolist);
 }
 
-const createTodoList = (req, res) => {
-    const newTodo = {
-        id: uniqueId(),
+const createTodoList = async (req, res) => {
+    const newTodo = await db.TodoList.create({
         task: req.body.task
-    }
-    todoList.push(newTodo);
+    })
     res.status(201).send(newTodo);
 }
 
-const updateTodoList = (req, res) => {
-    const targetId = String(req.params.id);
-    const targetIdx = todoList.findIndex(todo => todo.id === targetId);
-    todoList[targetIdx] = {
-        id: targetId,
-        task: req.body.task,
-    }
+const updateTodoList = async (req, res) => {
+    const targetId = Number(req.params.id);
+    const newTask = req.body.task;
+    await db.TodoList.update({
+        task: newTask
+    }, {
+        where: {
+            id: targetId
+        }
+    })
+    
     res.status(200).send({ message: "Updating us success"});
 }
 
-const deleteTodoList = (req, res) => {
-    const targetId = String(req.params.id);
-    todoList = todoList.filter( todo => todo.id !== targetId);
+const deleteTodoList = async (req, res) => {
+    const targetId = Number(req.params.id);
+    await db.TodoList.destroy({
+        where: {
+            id: targetId
+        }
+    });
     res.status(204).send();
 }
 

@@ -1,0 +1,40 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+.container {
+  margin: auto;
+  width: 80%;
+}
+
+.card {
+  width: 400px;
+  border: 2px solid rgb(149, 149, 149);
+  border-radius: 10px;
+  padding-bottom: 10px;
+}
+
+.card-body {
+  padding: 0px 10px;
+}
+
+.img-header {
+  width: 100%;
+}
+
+.button {
+  margin-top: 10px;
+  padding: 10px;
+  color: white;
+  background-color: rgb(84, 93, 221);
+  border: 0px;
+  border-radius: 7px;
+}
+
+.card-list {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  row-gap: 20px;
+}
